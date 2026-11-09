@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://c-ribeiro-dev.github.io/sitemap.xml
