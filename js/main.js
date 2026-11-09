@@ -1,6 +1,19 @@
 (function () {
   'use strict';
 
+  // E-mail: o endereço só é montado no clique, para não ficar escrito na página.
+  var mailBtn = document.querySelector('.mail-btn');
+  if (mailBtn) {
+    mailBtn.removeAttribute('target');
+    mailBtn.setAttribute('aria-label', 'Enviar e-mail. Abre o seu aplicativo de e-mail.');
+    mailBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var d = mailBtn.dataset;
+      var endereco = d.a + d.b + String.fromCharCode(64) + d.d + '.' + d.t;
+      window.location.href = 'mail' + 'to:' + endereco;
+    });
+  }
+
   // Menu mobile
   var btn = document.querySelector('.menu-btn');
   var menu = document.getElementById('menu');
