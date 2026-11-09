@@ -32,4 +32,3 @@ O GitHub Pages republica sozinho em cerca de 1 minuto.
 ## Onde editar
 - Textos, projetos e links: `index.html`
 - Cores e layout: `css/style.css` (variáveis no topo)
-- Se o repositório dos Acólitos ficar público, adicione o link no card do projeto em `index.html`.
